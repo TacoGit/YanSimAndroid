@@ -2,6 +2,8 @@
 
 Yandere Simulator is a stealth sandbox game about liking a boy and secretly eliminating any girl who has a crush on him, while maintaining a stable image of yourself.
 
+(Code has not been pushed yet, please stand by)
+
 ![tanos-frontend](https://raw.githubusercontent.com/TacoGit/YanSimAndroid/main/thumb.png)
 
 Todo
