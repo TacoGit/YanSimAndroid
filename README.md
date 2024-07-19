@@ -26,6 +26,6 @@ Todo
 # Credits
 * [tanos](https://discordapp.com/users/916798305390964778) - Android port and fixes 🚧
 
-* [Ty](https://twitter.com/TyDotCS) - Assist in fetching code 🤝
+* [Ty](https://twitter.com/yophlox) - Assist in fetching code 🤝
 
 * [YandereDev](https://yanderedev.wordpress.com) - for making Yandere Simulator itself 🧑‍🔬
