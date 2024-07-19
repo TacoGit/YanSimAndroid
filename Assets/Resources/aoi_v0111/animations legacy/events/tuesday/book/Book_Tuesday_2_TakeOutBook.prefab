@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1020277248463037}
+  m_IsPrefabParent: 1
+--- !u!1 &1020277248463037
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4689905995598551}
+  - component: {fileID: 111132966874659050}
+  m_Layer: 0
+  m_Name: Book_Tuesday_2_TakeOutBook
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4689905995598551
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020277248463037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4679506800335712}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!111 &111132966874659050
+Animation:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1020277248463037}
+  m_Enabled: 1
+  m_Animation: {fileID: 7400000, guid: e8752c6031b7e5948a44d9d3833dc707, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e8752c6031b7e5948a44d9d3833dc707, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!1 &1122649311811004
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4679506800335712}
+  m_Layer: 0
+  m_Name: joint5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4679506800335712
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122649311811004}
+  m_LocalRotation: {x: 0.76918465, y: 0.02283465, z: 0.012927553, w: 0.63848764}
+  m_LocalPosition: {x: -0.010364881, y: 0.98441684, z: -0.09565072}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4548380782733971}
+  - {fileID: 4036190565971769}
+  m_Father: {fileID: 4689905995598551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 100.6227, y: -0.5312502, z: -2.959985}
+--- !u!1 &1047598350485309
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4548380782733971}
+  m_Layer: 0
+  m_Name: joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4548380782733971
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047598350485309}
+  m_LocalRotation: {x: -0.7040786, y: 0.71012205, z: 4.3482433E-17, w: -4.311238E-17}
+  m_LocalPosition: {x: -0.00094750454, y: -0.01391932, z: -0.00023524839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4505111921363517}
+  m_Father: {fileID: 4679506800335712}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: -4.3658355E-23, z: 90.48969}
+--- !u!1 &1112562181510758
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4505111921363517}
+  m_Layer: 0
+  m_Name: joint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4505111921363517
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1112562181510758}
+  m_LocalRotation: {x: -0.7040786, y: 0.71012205, z: 8.659324E-17, w: 3.6846546E-19}
+  m_LocalPosition: {x: -0.001270653, y: -0.1269722, z: 1.232716E-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4548380782733971}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: -7.0164525E-15, z: 90.48969}
+--- !u!1 &1974934017246222
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4036190565971769}
+  m_Layer: 0
+  m_Name: joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4036190565971769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1974934017246222}
+  m_LocalRotation: {x: -0.0017068192, y: 0.99999857, z: -6.1336766E-17, w: -6.112774E-17}
+  m_LocalPosition: {x: -0.0006967257, y: 0.01542181, z: -0.00023524839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4957667925604098}
+  m_Father: {fileID: 4679506800335712}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -180, y: 7.016709E-15, z: 179.80441}
+--- !u!1 &1386325917922396
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4957667925604098}
+  m_Layer: 0
+  m_Name: joint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4957667925604098
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386325917922396}
+  m_LocalRotation: {x: -0.0017068192, y: 0.99999857, z: 6.123225E-17, w: -1.04512526E-19}
+  m_LocalPosition: {x: -0.1276544, y: 3.4362838E-05, z: -1.686049E-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4036190565971769}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 180, y: -2.08836E-25, z: 179.80441}

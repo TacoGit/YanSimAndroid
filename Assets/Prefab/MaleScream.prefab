@@ -1,0 +1,161 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1499114401414207}
+  m_IsPrefabParent: 1
+--- !u!1 &1499114401414207
+GameObject:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4557693897690785}
+  - component: {fileID: 114826833385201954}
+  - component: {fileID: 114218296326012897}
+  - component: {fileID: 82789961114667434}
+  m_Layer: 0
+  m_Name: MaleScream
+  m_TagString: explosion
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4557693897690785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499114401414207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114826833385201954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499114401414207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1283495955, guid: a625bb1df26ed231f795e6f1f8de943e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  destroyTime: 10
+--- !u!114 &114218296326012897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499114401414207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82e60ad338788259c6f1cc87a34591fc, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Screams:
+  - {fileID: 8300000, guid: d78b0b3b968011343a374dd521fa0416, type: 3}
+  - {fileID: 8300000, guid: 4326e3d7f882963449b91ce3ac281cb1, type: 3}
+  - {fileID: 8300000, guid: d740a80998f1f2546ad041184bfa163f, type: 3}
+  - {fileID: 8300000, guid: 2e25a0e26405e374882380b1a191dfd3, type: 3}
+  - {fileID: 8300000, guid: 478d4c74f32f4ec4c9f1beeda4224dea, type: 3}
+  - {fileID: 8300000, guid: 8d1fa824102c2084c9bd63eecbaa29a3, type: 3}
+  - {fileID: 8300000, guid: 622920f69923f0c4c91775906e30cc7e, type: 3}
+  - {fileID: 8300000, guid: d2c2d0c3a7d633847a7ae7e3d278ed5f, type: 3}
+  - {fileID: 8300000, guid: 9436ea24722c27d469c7445e46de8c07, type: 3}
+  - {fileID: 8300000, guid: f3b2647362d72a547bb86d379f53436d, type: 3}
+  - {fileID: 8300000, guid: 05205c97e4ab16144a407c1364885cd3, type: 3}
+  - {fileID: 8300000, guid: b6c667fdc9ad0f54ba30a01862a6c8e5, type: 3}
+  - {fileID: 8300000, guid: bf6ef039f094231468ee7d4d69302470, type: 3}
+--- !u!82 &82789961114667434
+AudioSource:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1499114401414207}
+  m_Enabled: 1
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0

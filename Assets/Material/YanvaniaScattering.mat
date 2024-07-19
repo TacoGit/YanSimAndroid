@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: YanvaniaScattering
+  m_Shader: {fileID: 4800000, guid: cd05aadc5cfabda48812f984dfd73797, type: 3}
+  m_ShaderKeywords:
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - noisetex:
+        m_Texture: {fileID: 2800000, guid: fcb170a26cd043f4b92349202ddbd342, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - starTexture:
+        m_Texture: {fileID: 2800000, guid: 1857c0af576cc6a4780a7f74d4484ebd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - DirectionalityFactor: 0
+    - SunColorIntensity: 0
+    - cloudSpeed1: 1
+    - cloudSpeed2: 1
+    - fade: 0
+    - plane_height1: 1
+    - plane_height2: 1
+    - tint: 1
+    m_Colors:
+    - BetaMieTheta: {r: 0, g: 0, b: 0, a: 1}
+    - BetaRayTheta: {r: 0, g: 0, b: 0, a: 1}
+    - LightDir: {r: 0, g: 0, b: 0, a: 1}
+    - g_vEyePt: {r: 0, g: 0, b: 0, a: 1}
+    - g_vSunColor: {r: 0, g: 0, b: 0, a: 1}
+    - vBetaMie: {r: 0, g: 0, b: 0, a: 1}
+    - vBetaRayleigh: {r: 0, g: 0, b: 0, a: 1}
+    - wind_direction: {r: 0.87369305, g: 1.2048682, b: 1.2365863, a: 0.3}
