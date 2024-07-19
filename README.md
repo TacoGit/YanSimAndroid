@@ -1,8 +1,10 @@
-# Unofficial Yandere Simulator port for Android 🚧
+# Yandere Simulator Decomp 🚧
 
 Yandere Simulator is a stealth sandbox game about liking a boy and secretly eliminating any girl who has a crush on him, while maintaining a stable image of yourself.
 
-![tanos-frontend](https://raw.githubusercontent.com/TacoGit/YanSimAndroid/main/thumb.png)
+### Game Version 2019/05/02, Unity 2023.1.20f
+
+[tanos-frontend](https://raw.githubusercontent.com/TacoGit/YanSimAndroid/main/thumb.png)
 
 Todo
 
