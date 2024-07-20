@@ -6,7 +6,7 @@ Yandere Simulator is a stealth sandbox game about liking a boy and secretly elim
 
 #### im forced to say that yandere dev made everything here ####
 
-![tanos-frontend](https://raw.githubusercontent.com/TacoGit/YanSimAndroid/main/thumb.png)
+![tanos-frontend](https://raw.githubusercontent.com/TacoGit/YanSimAndroid/main/thumbnail.png)
 
 Todo
 
