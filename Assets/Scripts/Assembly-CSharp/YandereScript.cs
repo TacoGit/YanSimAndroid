@@ -3,7 +3,8 @@ using HighlightingSystem;
 using Pathfinding;
 using UnityEngine;
 
-// FIXED BY TANOS [x]
+// THIS IS NOT PURELY ALL HIS CODE, IM TRYING TO FIX EVERYTHING TO KEEP THE MEMORY STABLE *NOTE BY TANOS
+
 public class YandereScript : MonoBehaviour
 {
     public Quaternion targetRotation;
@@ -1560,105 +1561,31 @@ public class YandereScript : MonoBehaviour
 
 	public void SetAnimationLayers()
 	{
-		CharacterAnimation["f02_yanderePose_00"].layer = 1;
-		CharacterAnimation.Play("f02_yanderePose_00");
-		CharacterAnimation["f02_yanderePose_00"].weight = 0f;
-		CharacterAnimation["f02_shy_00"].layer = 2;
-		CharacterAnimation.Play("f02_shy_00");
-		CharacterAnimation["f02_shy_00"].weight = 0f;
-		CharacterAnimation["f02_singleSaw_00"].layer = 3;
-		CharacterAnimation.Play("f02_singleSaw_00");
-		CharacterAnimation["f02_singleSaw_00"].weight = 0f;
-		CharacterAnimation["f02_fist_00"].layer = 4;
-		CharacterAnimation.Play("f02_fist_00");
-		CharacterAnimation["f02_fist_00"].weight = 0f;
-		CharacterAnimation["f02_mopping_00"].layer = 5;
-		CharacterAnimation["f02_mopping_00"].speed = 2f;
-		CharacterAnimation.Play("f02_mopping_00");
-		CharacterAnimation["f02_mopping_00"].weight = 0f;
-		CharacterAnimation["f02_carry_00"].layer = 6;
-		CharacterAnimation.Play("f02_carry_00");
-		CharacterAnimation["f02_carry_00"].weight = 0f;
-		CharacterAnimation["f02_mopCarry_00"].layer = 7;
-		CharacterAnimation.Play("f02_mopCarry_00");
-		CharacterAnimation["f02_mopCarry_00"].weight = 0f;
-		CharacterAnimation["f02_bucketCarry_00"].layer = 8;
-		CharacterAnimation.Play("f02_bucketCarry_00");
-		CharacterAnimation["f02_bucketCarry_00"].weight = 0f;
-		CharacterAnimation["f02_cameraPose_00"].layer = 9;
-		CharacterAnimation.Play("f02_cameraPose_00");
-		CharacterAnimation["f02_cameraPose_00"].weight = 0f;
-		CharacterAnimation["f02_grip_00"].layer = 10;
-		CharacterAnimation.Play("f02_grip_00");
-		CharacterAnimation["f02_grip_00"].weight = 0f;
-		CharacterAnimation["f02_holdHead_00"].layer = 11;
-		CharacterAnimation.Play("f02_holdHead_00");
-		CharacterAnimation["f02_holdHead_00"].weight = 0f;
-		CharacterAnimation["f02_holdTorso_00"].layer = 12;
-		CharacterAnimation.Play("f02_holdTorso_00");
-		CharacterAnimation["f02_holdTorso_00"].weight = 0f;
-		CharacterAnimation["f02_carryCan_00"].layer = 13;
-		CharacterAnimation.Play("f02_carryCan_00");
-		CharacterAnimation["f02_carryCan_00"].weight = 0f;
-		CharacterAnimation["f02_leftGrip_00"].layer = 14;
-		CharacterAnimation.Play("f02_leftGrip_00");
-		CharacterAnimation["f02_leftGrip_00"].weight = 0f;
-		CharacterAnimation["f02_carryShoulder_00"].layer = 15;
-		CharacterAnimation.Play("f02_carryShoulder_00");
-		CharacterAnimation["f02_carryShoulder_00"].weight = 0f;
-		CharacterAnimation["f02_carryFlashlight_00"].layer = 16;
-		CharacterAnimation.Play("f02_carryFlashlight_00");
-		CharacterAnimation["f02_carryFlashlight_00"].weight = 0f;
-		CharacterAnimation["f02_carryBox_00"].layer = 17;
-		CharacterAnimation.Play("f02_carryBox_00");
-		CharacterAnimation["f02_carryBox_00"].weight = 0f;
-		CharacterAnimation["f02_holdBook_00"].layer = 18;
-		CharacterAnimation.Play("f02_holdBook_00");
-		CharacterAnimation["f02_holdBook_00"].weight = 0f;
-		CharacterAnimation["f02_holdBook_00"].speed = 0.5f;
-		CharacterAnimation[CreepyIdles[1]].layer = 19;
-		CharacterAnimation.Play(CreepyIdles[1]);
-		CharacterAnimation[CreepyIdles[1]].weight = 0f;
-		CharacterAnimation[CreepyIdles[2]].layer = 20;
-		CharacterAnimation.Play(CreepyIdles[2]);
-		CharacterAnimation[CreepyIdles[2]].weight = 0f;
-		CharacterAnimation[CreepyIdles[3]].layer = 21;
-		CharacterAnimation.Play(CreepyIdles[3]);
-		CharacterAnimation[CreepyIdles[3]].weight = 0f;
-		CharacterAnimation[CreepyIdles[4]].layer = 22;
-		CharacterAnimation.Play(CreepyIdles[4]);
-		CharacterAnimation[CreepyIdles[4]].weight = 0f;
-		CharacterAnimation[CreepyIdles[5]].layer = 23;
-		CharacterAnimation.Play(CreepyIdles[5]);
-		CharacterAnimation[CreepyIdles[5]].weight = 0f;
-		CharacterAnimation[CreepyWalks[1]].layer = 24;
-		CharacterAnimation.Play(CreepyWalks[1]);
-		CharacterAnimation[CreepyWalks[1]].weight = 0f;
-		CharacterAnimation[CreepyWalks[2]].layer = 25;
-		CharacterAnimation.Play(CreepyWalks[2]);
-		CharacterAnimation[CreepyWalks[2]].weight = 0f;
-		CharacterAnimation[CreepyWalks[3]].layer = 26;
-		CharacterAnimation.Play(CreepyWalks[3]);
-		CharacterAnimation[CreepyWalks[3]].weight = 0f;
-		CharacterAnimation[CreepyWalks[4]].layer = 27;
-		CharacterAnimation.Play(CreepyWalks[4]);
-		CharacterAnimation[CreepyWalks[4]].weight = 0f;
-		CharacterAnimation[CreepyWalks[5]].layer = 28;
-		CharacterAnimation.Play(CreepyWalks[5]);
-		CharacterAnimation[CreepyWalks[5]].weight = 0f;
-		CharacterAnimation["f02_carryDramatic_00"].layer = 29;
-		CharacterAnimation.Play("f02_carryDramatic_00");
-		CharacterAnimation["f02_carryDramatic_00"].weight = 0f;
-		CharacterAnimation["f02_selfie_00"].layer = 30;
-		CharacterAnimation.Play("f02_selfie_00");
-		CharacterAnimation["f02_selfie_00"].weight = 0f;
-		CharacterAnimation["f02_dramaticWriting_00"].layer = 31;
-		CharacterAnimation.Play("f02_dramaticWriting_00");
-		CharacterAnimation["f02_dramaticWriting_00"].weight = 0f;
-		CharacterAnimation["f02_reachForWeapon_00"].layer = 32;
-		CharacterAnimation.Play("f02_reachForWeapon_00");
-		CharacterAnimation["f02_reachForWeapon_00"].weight = 0f;
-		CharacterAnimation["f02_reachForWeapon_00"].speed = 2f;
+		string[] animations = {
+			"f02_yanderePose_00", "f02_shy_00", "f02_singleSaw_00", "f02_fist_00", "f02_mopping_00", "f02_carry_00",
+			"f02_mopCarry_00", "f02_bucketCarry_00", "f02_cameraPose_00", "f02_grip_00", "f02_holdHead_00",
+			"f02_holdTorso_00", "f02_carryCan_00", "f02_leftGrip_00", "f02_carryShoulder_00", "f02_carryFlashlight_00",
+			"f02_carryBox_00", "f02_holdBook_00", CreepyIdles[1], CreepyIdles[2], CreepyIdles[3], CreepyIdles[4],
+			CreepyIdles[5], CreepyWalks[1], CreepyWalks[2], CreepyWalks[3], CreepyWalks[4], CreepyWalks[5],
+			"f02_carryDramatic_00", "f02_selfie_00", "f02_dramaticWriting_00", "f02_reachForWeapon_00"
+		};
+
+		int[] layers = {
+			1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+		};
+
+		float[] speeds = {
+			1f, 1f, 1f, 1f, 2f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 0.5f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 1f, 2f
+		};
+
+		for (int i = 0; i < animations.Length; i++)
+		{
+			CharacterAnimation[animations[i]].layer = layers[i];
+			CharacterAnimation.Play(animations[i]);
+			CharacterAnimation[animations[i]].weight = 0f;
+			CharacterAnimation[animations[i]].speed = speeds[i];
+		}
+
 		CharacterAnimation["f02_dipping_00"].speed = 2f;
 		CharacterAnimation["f02_stripping_00"].speed = 1.5f;
 		CharacterAnimation["f02_falconIdle_00"].speed = 2f;
@@ -2735,96 +2662,91 @@ public class YandereScript : MonoBehaviour
 		}
 		if (Laughing)
 		{
-			if (Hairstyles[14].activeInHierarchy)
+			switch (true)
 			{
-				LaughAnim = "storepower_20";
-				LaughClip = ChargeUp;
-			}
-			if (Stand.Stand.activeInHierarchy)
-			{
-				LaughAnim = "f02_jojoAttack_00";
-				LaughClip = YanYan;
-			}
-			else if (FlameDemonic)
-			{
-				float axis = Input.GetAxis("Vertical");
-				float axis2 = Input.GetAxis("Horizontal");
-				Vector3 vector3 = MainCamera.transform.TransformDirection(Vector3.forward);
-				vector3.y = 0f;
-				vector3 = vector3.normalized;
-				Vector3 vector4 = new Vector3(vector3.z, 0f, 0f - vector3.x);
-				Vector3 vector5 = axis2 * vector4 + axis * vector3;
-				if (vector5 != Vector3.zero)
-				{
-					targetRotation = Quaternion.LookRotation(vector5);
-					base.transform.rotation = Quaternion.Lerp(base.transform.rotation, targetRotation, Time.deltaTime * 10f);
-				}
-				LaughAnim = "f02_demonAttack_00";
-				CirnoTimer -= Time.deltaTime;
-				if (CirnoTimer < 0f)
-				{
-					GameObject gameObject4 = Object.Instantiate(Fireball, RightHand.position, base.transform.rotation);
-					gameObject4.transform.localEulerAngles += new Vector3(Random.Range(0f, 22.5f), Random.Range(-22.5f, 22.5f), Random.Range(-22.5f, 22.5f));
-					GameObject gameObject5 = Object.Instantiate(Fireball, LeftHand.position, base.transform.rotation);
-					gameObject5.transform.localEulerAngles += new Vector3(Random.Range(0f, 22.5f), Random.Range(-22.5f, 22.5f), Random.Range(-22.5f, 22.5f));
-					CirnoTimer = 0.1f;
-				}
-			}
-			else if (CirnoHair.activeInHierarchy)
-			{
-				float axis3 = Input.GetAxis("Vertical");
-				float axis4 = Input.GetAxis("Horizontal");
-				Vector3 vector6 = MainCamera.transform.TransformDirection(Vector3.forward);
-				vector6.y = 0f;
-				vector6 = vector6.normalized;
-				Vector3 vector7 = new Vector3(vector6.z, 0f, 0f - vector6.x);
-				Vector3 vector8 = axis4 * vector7 + axis3 * vector6;
-				if (vector8 != Vector3.zero)
-				{
-					targetRotation = Quaternion.LookRotation(vector8);
-					base.transform.rotation = Quaternion.Lerp(base.transform.rotation, targetRotation, Time.deltaTime * 10f);
-				}
-				LaughAnim = "f02_cirnoAttack_00";
-				CirnoTimer -= Time.deltaTime;
-				if (CirnoTimer < 0f)
-				{
-					GameObject gameObject6 = Object.Instantiate(CirnoIceAttack, base.transform.position + base.transform.up * 1.4f, base.transform.rotation);
-					gameObject6.transform.localEulerAngles += new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
-					MyAudio.PlayOneShot(CirnoIceClip);
-					CirnoTimer = 0.1f;
-				}
-			}
-			else if (TornadoHair.activeInHierarchy)
-			{
-				LaughAnim = "f02_tornadoAttack_00";
-				CirnoTimer -= Time.deltaTime;
-				if (CirnoTimer < 0f)
-				{
-					GameObject gameObject7 = Object.Instantiate(TornadoAttack, base.transform.forward * 5f + new Vector3(base.transform.position.x + Random.Range(-5f, 5f), base.transform.position.y, base.transform.position.z + Random.Range(-5f, 5f)), base.transform.rotation);
-					while (Vector3.Distance(base.transform.position, gameObject7.transform.position) < 1f)
+				case bool _ when Hairstyles[14].activeInHierarchy:
+					LaughAnim = "storepower_20";
+					LaughClip = ChargeUp;
+					break;
+				case bool _ when Stand.Stand.activeInHierarchy:
+					LaughAnim = "f02_jojoAttack_00";
+					LaughClip = YanYan;
+					break;
+				case bool _ when FlameDemonic:
+					float axis = Input.GetAxis("Vertical");
+					float axis2 = Input.GetAxis("Horizontal");
+					Vector3 vector3 = MainCamera.transform.TransformDirection(Vector3.forward);
+					vector3.y = 0f;
+					vector3 = vector3.normalized;
+					Vector3 vector4 = new Vector3(vector3.z, 0f, 0f - vector3.x);
+					Vector3 vector5 = axis2 * vector4 + axis * vector3;
+					if (vector5 != Vector3.zero)
 					{
-						gameObject7.transform.position = base.transform.forward * 5f + new Vector3(base.transform.position.x + Random.Range(-5f, 5f), base.transform.position.y, base.transform.position.z + Random.Range(-5f, 5f));
+						targetRotation = Quaternion.LookRotation(vector5);
+						base.transform.rotation = Quaternion.Lerp(base.transform.rotation, targetRotation, Time.deltaTime * 10f);
 					}
-					CirnoTimer = 0.1f;
-				}
-			}
-			else if (BladeHair.activeInHierarchy)
-			{
-				LaughAnim = "f02_spin_00";
-				base.transform.localEulerAngles = new Vector3(base.transform.localEulerAngles.x, base.transform.localEulerAngles.y + Time.deltaTime * 360f * 2f, base.transform.localEulerAngles.z);
-				BladeHairCollider1.enabled = true;
-				BladeHairCollider2.enabled = true;
-			}
-			else if (BanchoActive)
-			{
-				BanchoFlurry.MyCollider.enabled = true;
-				LaughAnim = "f02_banchoFlurry_00";
-			}
-			else if (MyAudio.clip != LaughClip)
-			{
-				MyAudio.clip = LaughClip;
-				MyAudio.time = 0f;
-				MyAudio.Play();
+					LaughAnim = "f02_demonAttack_00";
+					CirnoTimer -= Time.deltaTime;
+					if (CirnoTimer < 0f)
+					{
+						GameObject gameObject4 = Object.Instantiate(Fireball, RightHand.position, base.transform.rotation);
+						gameObject4.transform.localEulerAngles += new Vector3(Random.Range(0f, 22.5f), Random.Range(-22.5f, 22.5f), Random.Range(-22.5f, 22.5f));
+						GameObject gameObject5 = Object.Instantiate(Fireball, LeftHand.position, base.transform.rotation);
+						gameObject5.transform.localEulerAngles += new Vector3(Random.Range(0f, 22.5f), Random.Range(-22.5f, 22.5f), Random.Range(-22.5f, 22.5f));
+						CirnoTimer = 0.1f;
+					}
+					break;
+				case bool _ when CirnoHair.activeInHierarchy:
+					float axis3 = Input.GetAxis("Vertical");
+					float axis4 = Input.GetAxis("Horizontal");
+					Vector3 vector6 = MainCamera.transform.TransformDirection(Vector3.forward);
+					vector6.y = 0f;
+					vector6 = vector6.normalized;
+					Vector3 vector7 = new Vector3(vector6.z, 0f, 0f - vector6.x);
+					Vector3 vector8 = axis4 * vector7 + axis3 * vector6;
+					if (vector8 != Vector3.zero)
+					{
+						targetRotation = Quaternion.LookRotation(vector8);
+						base.transform.rotation = Quaternion.Lerp(base.transform.rotation, targetRotation, Time.deltaTime * 10f);
+					}
+					LaughAnim = "f02_cirnoAttack_00";
+					CirnoTimer -= Time.deltaTime;
+					if (CirnoTimer < 0f)
+					{
+						GameObject gameObject6 = Object.Instantiate(CirnoIceAttack, base.transform.position + base.transform.up * 1.4f, base.transform.rotation);
+						gameObject6.transform.localEulerAngles += new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+						MyAudio.PlayOneShot(CirnoIceClip);
+						CirnoTimer = 0.1f;
+					}
+					break;
+				case bool _ when TornadoHair.activeInHierarchy:
+					LaughAnim = "f02_tornadoAttack_00";
+					CirnoTimer -= Time.deltaTime;
+					if (CirnoTimer < 0f)
+					{
+						GameObject gameObject7 = Object.Instantiate(TornadoAttack, base.transform.forward * 5f + new Vector3(base.transform.position.x + Random.Range(-5f, 5f), base.transform.position.y, base.transform.position.z + Random.Range(-5f, 5f)), base.transform.rotation);
+						while (Vector3.Distance(base.transform.position, gameObject7.transform.position) < 1f)
+						{
+							gameObject7.transform.position = base.transform.forward * 5f + new Vector3(base.transform.position.x + Random.Range(-5f, 5f), base.transform.position.y, base.transform.position.z + Random.Range(-5f, 5f));
+						}
+						CirnoTimer = 0.1f;
+					}
+					break;
+				case bool _ when BladeHair.activeInHierarchy:
+					LaughAnim = "f02_spin_00";
+					base.transform.localEulerAngles = new Vector3(base.transform.localEulerAngles.x, base.transform.localEulerAngles.y + Time.deltaTime * 360f * 2f, base.transform.localEulerAngles.z);
+					BladeHairCollider1.enabled = true;
+					BladeHairCollider2.enabled = true;
+					break;
+				case bool _ when BanchoActive:
+					BanchoFlurry.MyCollider.enabled = true;
+					LaughAnim = "f02_banchoFlurry_00";
+					break;
+				case bool _ when MyAudio.clip != LaughClip:
+					MyAudio.clip = LaughClip;
+					MyAudio.time = 0f;
+					MyAudio.Play();
+					break;
 			}
 			CharacterAnimation.CrossFade(LaughAnim);
 			if (Input.GetButtonDown("RB"))

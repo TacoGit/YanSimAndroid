@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using FIMSpace.FLook;
 using Pathfinding;
 using UnityEngine;
-// FIXED BY TANOS [30%]
+
+// THIS IS NOT PURELY ALL HIS CODE, IM TRYING TO FIX EVERYTHING TO KEEP THE MEMORY STABLE *NOTE BY TANOS
+
 public class StudentScript : MonoBehaviour
 {
 	public Quaternion targetRotation;
@@ -1554,56 +1556,34 @@ public class StudentScript : MonoBehaviour
 		get
 		{
 			if (GameGlobals.EmptyDemon)
-			{
 				return SubtitleType.ClubPlaceholderInfo;
-			}
-			if (Club == ClubType.Cooking)
+
+			switch (Club)
 			{
-				return SubtitleType.ClubCookingInfo;
-			}
-			if (Club == ClubType.Drama)
-			{
-				return SubtitleType.ClubDramaInfo;
-			}
-			if (Club == ClubType.Occult)
-			{
-				return SubtitleType.ClubOccultInfo;
-			}
-			if (Club == ClubType.Art)
-			{
-				return SubtitleType.ClubArtInfo;
-			}
-			if (Club == ClubType.LightMusic)
-			{
-				return SubtitleType.ClubLightMusicInfo;
-			}
-			if (Club == ClubType.MartialArts)
-			{
-				return SubtitleType.ClubMartialArtsInfo;
-			}
-			if (Club == ClubType.Photography)
-			{
-				if (Sleuthing)
-				{
-					return SubtitleType.ClubPhotoInfoDark;
-				}
-				return SubtitleType.ClubPhotoInfoLight;
-			}
-			if (Club == ClubType.Science)
-			{
-				return SubtitleType.ClubScienceInfo;
-			}
-			if (Club == ClubType.Sports)
-			{
-				return SubtitleType.ClubSportsInfo;
-			}
-			if (Club == ClubType.Gardening)
-			{
-				return SubtitleType.ClubGardenInfo;
-			}
-			if (Club == ClubType.Gaming)
-			{
-				return SubtitleType.ClubGamingInfo;
+				case ClubType.Cooking:
+					return SubtitleType.ClubCookingInfo;
+				case ClubType.Drama:
+					return SubtitleType.ClubDramaInfo;
+				case ClubType.Occult:
+					return SubtitleType.ClubOccultInfo;
+				case ClubType.Art:
+					return SubtitleType.ClubArtInfo;
+				case ClubType.LightMusic:
+					return SubtitleType.ClubLightMusicInfo;
+				case ClubType.MartialArts:
+					return SubtitleType.ClubMartialArtsInfo;
+				case ClubType.Photography:
+					return Sleuthing ? SubtitleType.ClubPhotoInfoDark : SubtitleType.ClubPhotoInfoLight;
+				case ClubType.Science:
+					return SubtitleType.ClubScienceInfo;
+				case ClubType.Sports:
+					return SubtitleType.ClubSportsInfo;
+				case ClubType.Gardening:
+					return SubtitleType.ClubGardenInfo;
+				case ClubType.Gaming:
+					return SubtitleType.ClubGamingInfo;
+				default:
+					return SubtitleType.ClubPlaceholderInfo;
 			}
 			return SubtitleType.ClubPlaceholderInfo;
 		}
@@ -1687,22 +1667,32 @@ public class StudentScript : MonoBehaviour
 			{
 				Persona = PersonaType.Coward;
 			}
-			if (Persona == PersonaType.Loner || Persona == PersonaType.Coward || Persona == PersonaType.Fragile)
+
+			switch (Persona)
 			{
-				CameraAnims = CowardAnims;
+				case PersonaType.Loner:
+				case PersonaType.Coward:
+				case PersonaType.Fragile:
+					CameraAnims = CowardAnims;
+					break;
+				case PersonaType.TeachersPet:
+				case PersonaType.Heroic:
+				case PersonaType.Strict:
+					CameraAnims = HeroAnims;
+					break;
+				case PersonaType.Evil:
+				case PersonaType.Spiteful:
+				case PersonaType.Violent:
+					CameraAnims = EvilAnims;
+					break;
+				case PersonaType.SocialButterfly:
+				case PersonaType.Lovestruck:
+				case PersonaType.PhoneAddict:
+				case PersonaType.Sleuth:
+					CameraAnims = SocialAnims;
+					break;
 			}
-			else if (Persona == PersonaType.TeachersPet || Persona == PersonaType.Heroic || Persona == PersonaType.Strict)
-			{
-				CameraAnims = HeroAnims;
-			}
-			else if (Persona == PersonaType.Evil || Persona == PersonaType.Spiteful || Persona == PersonaType.Violent)
-			{
-				CameraAnims = EvilAnims;
-			}
-			else if (Persona == PersonaType.SocialButterfly || Persona == PersonaType.Lovestruck || Persona == PersonaType.PhoneAddict || Persona == PersonaType.Sleuth)
-			{
-				CameraAnims = SocialAnims;
-			}
+
 			if (ClubGlobals.GetClubClosed(Club))
 			{
 				Club = ClubType.None;
@@ -14658,36 +14648,17 @@ public class StudentScript : MonoBehaviour
 	{
 		if (Witnessed == StudentWitnessType.Murder)
 		{
-			if (WitnessedMindBrokenMurder) Subtitle.UpdateLabel(SubtitleType.TeacherMurderReaction, 4, 6f);
-			else { Subtitle.UpdateLabel(SubtitleType.TeacherMurderReaction, 1, 6f); }
+			Subtitle.UpdateLabel(SubtitleType.TeacherMurderReaction, WitnessedMindBrokenMurder ? 4 : 1, 6f);
 			GameOverCause = GameOverType.Murder;
 			WitnessedMurder = true;
 		}
-		else if (Witnessed == StudentWitnessType.WeaponAndBloodAndInsanity)
+		else if (Witnessed == StudentWitnessType.WeaponAndBloodAndInsanity || Witnessed == StudentWitnessType.WeaponAndInsanity || Witnessed == StudentWitnessType.BloodAndInsanity || Witnessed == StudentWitnessType.Insanity || Witnessed == StudentWitnessType.Poisoning)
 		{
 			Subtitle.UpdateLabel(SubtitleType.TeacherInsanityHostile, 1, 6f);
 			GameOverCause = GameOverType.Insanity;
 			WitnessedMurder = true;
 		}
-		else if (Witnessed == StudentWitnessType.WeaponAndBlood)
-		{
-			Subtitle.UpdateLabel(SubtitleType.TeacherWeaponHostile, 1, 6f);
-			GameOverCause = GameOverType.Weapon;
-			WitnessedMurder = true;
-		}
-		else if (Witnessed == StudentWitnessType.WeaponAndInsanity)
-		{
-			Subtitle.UpdateLabel(SubtitleType.TeacherInsanityHostile, 1, 6f);
-			GameOverCause = GameOverType.Insanity;
-			WitnessedMurder = true;
-		}
-		else if (Witnessed == StudentWitnessType.BloodAndInsanity)
-		{
-			Subtitle.UpdateLabel(SubtitleType.TeacherInsanityHostile, 1, 6f);
-			GameOverCause = GameOverType.Insanity;
-			WitnessedMurder = true;
-		}
-		else if (Witnessed == StudentWitnessType.Weapon)
+		else if (Witnessed == StudentWitnessType.WeaponAndBlood || Witnessed == StudentWitnessType.Weapon)
 		{
 			Subtitle.UpdateLabel(SubtitleType.TeacherWeaponHostile, 1, 6f);
 			GameOverCause = GameOverType.Weapon;
@@ -14697,12 +14668,6 @@ public class StudentScript : MonoBehaviour
 		{
 			Subtitle.UpdateLabel(SubtitleType.TeacherBloodHostile, 1, 6f);
 			GameOverCause = GameOverType.Blood;
-			WitnessedMurder = true;
-		}
-		else if (Witnessed == StudentWitnessType.Insanity || Witnessed == StudentWitnessType.Poisoning)
-		{
-			Subtitle.UpdateLabel(SubtitleType.TeacherInsanityHostile, 1, 6f);
-			GameOverCause = GameOverType.Insanity;
 			WitnessedMurder = true;
 		}
 		else if (Witnessed == StudentWitnessType.Lewd)
